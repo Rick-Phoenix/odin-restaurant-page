@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    height: 30vh;
+    background-color: orange;
+}
+
+.logo {
+    height: 100%;
+}
+
+button {
+    background-color: antiquewhite;
+}
