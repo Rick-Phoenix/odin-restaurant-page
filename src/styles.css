@@ -1,16 +1,76 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(./Fonts/norse/Norse.otf);
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url(./Fonts/norse/Norsebold.otf);
+    font-weight: bold;
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Norse';
+}
+
+body {
+    background-image: url('./Images/bkg.jpg');
 }
 
 header {
     height: 30vh;
     background-color: orange;
+    display: flex;
+    width: 65%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .logo {
     height: 100%;
 }
 
+.titleBox {
+    flex-grow: 1;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.titleMain {
+    position: relative;
+    font-weight: bold;
+    font-size: 50px;
+    align-self: end;
+    letter-spacing: 30px;
+    text-align: center;
+}
+
+
+.titleMain::after {
+    content: '';
+    display: block;
+    width: 100%; 
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0) 0%, rgb(21 21 26 / 50%) 50%, rgba(0, 0, 255, 0) 100%);
+    margin: 5px auto; 
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 button {
     background-color: antiquewhite;
+    font-size: 15px;
+    padding: 5px 30px;
 }
