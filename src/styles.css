@@ -99,6 +99,10 @@ p {
     margin: 0;
     font-size: 20px;
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .parimg {
